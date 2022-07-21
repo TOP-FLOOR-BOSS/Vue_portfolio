@@ -57,7 +57,7 @@
 // @ is an alias to /src
 
 import About  from "./AboutPage.vue"
-import second from "../views/AboutPage.vue#2nd"
+// import second from "../views/AboutPage.vue#2nd"
 export default {
   components: {
     About

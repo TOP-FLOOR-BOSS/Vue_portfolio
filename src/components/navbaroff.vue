@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <router-link to="/" class="nav-link active">Testimoial</router-link>
+              <router-link to="/testimonial" class="nav-link active">Testimoial</router-link>
             </li>
 
             <li class="nav-item dropdown">
