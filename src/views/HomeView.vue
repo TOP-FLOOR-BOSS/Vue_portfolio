@@ -37,7 +37,7 @@
       </div>
 
       <a href="#about">
-        <button id="" type="button" class="btn btn-outline-dark btn-lg">About Me</button>
+        <button id="abtMebtn" type="button" class="btn btn-outline-light btn-lg">About Me</button>
       </a>
 
 
@@ -234,4 +234,51 @@ button:hover, button:focus{
   text-align:center;
   height:100%;
 }
+
+#abtMebtn{
+
+  height: 100px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.5rem sans-serif;
+  cursor: pointer;
+  will-change: transform;
+}
+
+#abtMebtn::before,
+#abtMebtn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: deeppink;
+  transition: all 250ms ease-in-out;
+}
+
+#abtMebtn::before {
+  width: 2px;
+  height: 100px;
+  box-shadow: 298px 0 deeppink;
+}
+
+#abtMebtn::after {
+  height: 2px;
+  width: 300px;
+  box-shadow: 0 98px deeppink;
+}
+
+#abtMebtn:hover::before {
+  left: -10px;
+  box-shadow: 318px 0 deeppink;
+}
+
+#abtMebtn:hover::after {
+  top: -10px;
+  box-shadow: 0 118px deeppink;
+}
+
 </style>
