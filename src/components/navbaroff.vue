@@ -45,7 +45,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <router-link to="/testimonial" class="nav-link active">Testimoial</router-link>
+              <router-link to="/testimonial" class="nav-link active">Testimonial</router-link>
             </li>
 
             <li class="nav-item dropdown">
@@ -61,11 +61,6 @@
             </li>
 
             
-            <li class="nav-item dropdown">
-              <router-link to="/footer" class="nav-link active"
-                >Footer</router-link
-              >
-            </li>
           </ul>
         </div>
       </div>

@@ -1,9 +1,9 @@
 <template>
 
   <navbar/>
-  <footerzzz/>
   <router-view/>
 
+  <footerzzz/>
 </template>
 
 

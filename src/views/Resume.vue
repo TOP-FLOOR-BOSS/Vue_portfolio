@@ -1,12 +1,12 @@
 <template>
-<Contact/>
+<Resume/>
 </template>
 
 <script>
-import Contact from "@/components/contact.vue";
+import Resume from "@/components/resume.vue";
 export default{
   components:{
-    Contact,
+    Resume,
   }
 }
 </script>

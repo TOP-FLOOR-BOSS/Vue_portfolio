@@ -1,392 +1,106 @@
 <template>
   <section class="projects">
-    <h1>Projects</h1>
-    <div class="container"></div>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/convert_minutes_toSecs.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
+    <h1>Project</h1>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
+    <!-- Button trigger modal -->
+<div class="container">
+  <div class="row">
+
+    <div class="card m-3 mx-auto" v-for="(project, index) in projects">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        :data-bs-target="'#exampleModal'+index"
+      >
+        <img id="modalIMG" class="img-fluid" :src="project.image">
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        :id="'exampleModal'+index"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{project.title}}</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            architecto mollitia distinctio tempore in numquam facilis unde ipsum
-            dolorem, consectetur sequi culpa nemo dolorum eveniet nisi. Voluptas
-            voluptatem sed impedit.
-          </p>
-        </div>
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/Property_listing.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
+            <div class="modal-body">{{ project.id }}</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+               <a href={{project.title}}><i class="bi bi-github" id="socialIcon"></i></a> 
+              </button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/Area_ofTriangle.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  </div>
       </div>
     </div>
 
-    <br />
-    <br />
+</div>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/To-Do_list.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/Bootsrap_portfolio.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img
-              src="../assets/Imgs/Calculator.png"
-              id="modalIMG"
-              alt=""
-            />
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 
 <script>
+// import { url } from 'inspector';
+
 export default {
   data() {
     return {
       projects: [
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "In this project I created a to do list that creates,deletes and Edits",
+          image: "https://i.postimg.cc/BvHgRHxH/To-Do-list.png",
+          title: "To-Do list",
+          netlify: "",
         },
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "This is a claculator that I created with JavaScript",
+          image: "https://i.postimg.cc/c4MSwxXc/Calculator.png",
+          title: "Calculator",
+          netlify: "",
         },
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "This is a Real Estate Website that can filter and sort by country and name ",
+          image: "https://i.postimg.cc/QdJd8g2h/Property-listing.png",
+          title: "Property List",
+          netlify: "",
         },
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "This project calculates the are of a Triangle",
+          image: "https://i.postimg.cc/mDNwV5qK/Area-of-Triangle.png",
+          title: "Area Of Triangle",
+          netlify: "",
         },
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "This is apersonal portfolio that i used using bootstrap",
+          image: "https://i.postimg.cc/Jnm3yQnx/Bootsrap-portfolio.png",
+          title: "Bootsrap Portfolio",
+          netlify: "",
         },
         {
-            id:'',
-            image:'',
-            title:'',
-            netlify:'',
+          id: "This converts minutes to seconds",
+          image: "https://i.postimg.cc/cLSfkm7S/convert-minutes-to-Secs.png",
+          title: "Convert Minutes to Second",
+          netlify: "",
         },
       ],
     };
@@ -395,12 +109,30 @@ export default {
 </script>
 
 <style>
+
+
+
+
 .projects {
   padding: 80px;
   background: linear-gradient(-45deg, #526fee, #c8ffc8, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: auto;
+  min-height: 100vh;
+  
+}
+
+.card {
+ width: 350px;
+}
+
+#socialIcon{
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 20px;
+
 }
 
 @keyframes gradient {
@@ -426,5 +158,20 @@ export default {
   width: 370px;
   height: 200px;
   object-fit: cover;
+}
+
+@media all and (max-width: 499px) {
+  .projects button {
+    width: 200px;
+  }
+
+  #modalIMG {
+    width: 170px;
+    height: 200px;
+  }
+
+  .projects h1 {
+    font-size: 60px;
+  }
 }
 </style>

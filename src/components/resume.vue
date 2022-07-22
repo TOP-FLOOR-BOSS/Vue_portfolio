@@ -406,22 +406,22 @@ export default {};
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  /* min-height: 100vw; */
+  /* height: 100vh; */
 }
 
 .fixed-half {
   /* padding: 80px; */
-  position: fixed;
+  position: absolute;
   will-change: transform;
   background-color: rgb(18, 129, 249);
-  background-image: url();
   background-size: cover;
   left: 0;
   right: 50%;
   top: 0;
   bottom: 0;
-  width: 30%;
+  width: 400px;
+  height: 900px;
 }
 .title {
   display: flex;
@@ -451,9 +451,11 @@ h1 {
 }
 
 .bold {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-family: Iceland;
+  font-size: 55px;
+  color: white;
+  -webkit-text-stroke: 2px rgb(1, 0, 18);
+  text-decoration: underline rgb(31, 13, 225) 7px;
 }
 
 .semi-bold {
@@ -664,5 +666,35 @@ h1 {
 
  .resume_right .resume_hobby ul li:last-child:before {
   display: none;
+}
+
+
+
+@media all and (max-width: 795px) {
+
+.fixed-half {
+  /* padding: 80px; */
+  position: relative;
+  width: 400px;
+  float: left;
+}
+
+#profile_pic {
+  width: 130px;
+  height: 150px;
+  background: rgba(204, 192, 192, 0.4);
+}
+
+.resume_left ul li .icon {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+
 }
 </style>
