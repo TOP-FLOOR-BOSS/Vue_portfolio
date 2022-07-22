@@ -1,5 +1,5 @@
 <template>
-  <section class="aboutPg vh-100">
+  <section class="aboutPg vh-100 mh-100">
     <!-- <div>
       <h1 id="aboutMeheader">About me</h1>
     </div> -->
@@ -16,13 +16,12 @@
         </p>
       </div>
 
-      <div class="split">
+      <div class="container text-center">
         <div class="row">
           <div class="col">
             <img id="pfp" src="../assets/Imgs/cloud1.png" alt="" />
           </div>
-
-          <div class="col py-3">
+          <div class="col" id="toolslist">
             <h2 id="subHeader">Tools that I use</h2>
             <p>
               My motivation to be a Developer started when I was inspirede by
@@ -32,8 +31,8 @@
               diving into.
             </p>
 
-            <div class="row py-5">
-              <div class="col-lg-6">
+            <div class="row">
+              <div class="col">
                 <ul>
                   <li>
                     <i class="fa-solid fa-circle-chevron-right"></i>
@@ -55,7 +54,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+
+              <div class="col">
                 <ul>
                   <li>
                     <i class="fa-solid fa-circle-chevron-right"></i>
@@ -78,14 +78,13 @@
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="skills section-bg">
+  <section class="skills vh-100">
     <div class="container">
       <div class="section-title">
         <h2 id="skillsH">Skills</h2>
@@ -98,16 +97,11 @@
       </div>
 
       <div class="row skills-content">
-        <div class="col-lg-6" >
-          
+        <div class="col-lg-6">
           <p class="fs-2">HTML5 <i class="fa-brands fa-html5"></i></p>
           <div class="progress" style="height: 31px">
             <div
-              class="progress-bar 
-              bg-success 
-              progress-bar-animated
-              fs-6"
-              
+              class="progress-bar bg-success progress-bar-animated fs-6"
               role="progressbar"
               style="width: 95%"
               aria-valuenow="25"
@@ -131,88 +125,65 @@
             </div>
           </div> -->
 
-            <p class="fs-2">CSS <i class="fa-brands fa-css3-alt"></i></p>
-            <div class="progress" style="height: 31px" >
-              <div
-                class="
-                  progress-bar
-                  bg-primary
-                   progress-bar-animated
-                   fs-6
-                "
-                role="progressbar"
-                style="width: 75%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                75%
-              </div>
+          <p class="fs-2">CSS <i class="fa-brands fa-css3-alt"></i></p>
+          <div class="progress" style="height: 31px">
+            <div
+              class="progress-bar bg-primary progress-bar-animated fs-6"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              75%
             </div>
+          </div>
 
-            <p class="fs-2">JavaScript <i class="fa-brands fa-java"></i></p>
-            <div class="progress" style="height: 31px" >
-              <div
-                class="
-                  progress-bar
-                  bg-primary
-                   progress-bar-animated
-                   fs-6
-                "
-                role="progressbar"
-                style="width: 55%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                55%
-              </div>
+          <p class="fs-2">JavaScript <i class="fa-brands fa-java"></i></p>
+          <div class="progress" style="height: 31px">
+            <div
+              class="progress-bar bg-primary progress-bar-animated fs-6"
+              role="progressbar"
+              style="width: 55%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              55%
             </div>
+          </div>
         </div>
 
         <!-- End Of first Three rows -->
 
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <p class="fs-2">MySQL</p>
-            <div class="progress" style="height: 31px" >
-              <div
-                class="
-                  progress-bar
-                  bg-primary
-                 progress-bar-animated
-                 fs-6
-                "
-                role="progressbar"
-                style="width: 93%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                95%
-              </div>
+          <p class="fs-2">MySQL</p>
+          <div class="progress" style="height: 31px">
+            <div
+              class="progress-bar bg-primary progress-bar-animated fs-6"
+              role="progressbar"
+              style="width: 93%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              95%
             </div>
+          </div>
 
-            <p class="fs-2">Vue.Js</p>
-            <div class="progress" style="height: 31px" >
-              <div
-                class="
-                  progress-bar
-                  bg-primary
-                  progress-bar-animated
-                  fs-6
-                "
-                role="progressbar"
-                style="width: 45%"
-                aria-valuenow="25"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                45%
-              </div>
+          <p class="fs-2">Vue.Js</p>
+          <div class="progress" style="height: 31px">
+            <div
+              class="progress-bar bg-primary progress-bar-animated fs-6"
+              role="progressbar"
+              style="width: 45%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              45%
             </div>
-
-
+          </div>
         </div>
       </div>
     </div>
@@ -225,73 +196,66 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .aboutPg {
   padding: 80px;
   background: rgb(18, 129, 249);
   background: radial-gradient(
     circle,
-    rgb(197, 230, 230) 10%,
+    rgb(69, 210, 232) 10%,
     rgb(0, 191, 255) 77%
   );
 }
 
-.abtTitle h2{
-    font-family: Iceland;
-    font-size: 85px;
-    color: white;
-  	-webkit-text-stroke: 2px rgb(1, 0, 18);
-    text-decoration: underline  rgb(31, 13, 225) 7px;
-  }
-
-  #skillsH{
-        font-family: Iceland;
-    font-size: 85px;
-    color: white;
-  	-webkit-text-stroke: 2px rgb(1, 0, 18);
-    text-decoration: underline  rgb(31, 13, 225) 7px;
-  }
-
-#aboutMeheader {
+.abtTitle h2 {
   font-family: Iceland;
-  font-size: 90px;
-  text-decoration: underline;
+  font-size: 85px;
+  color: white;
+  -webkit-text-stroke: 2px rgb(1, 0, 18);
+  text-decoration: underline rgb(31, 13, 225) 7px;
+}
+
+.abtTitle p {
+  font-family: "Kanit", sans-serif;
+  font-size: 19px;
+  color: white;
 }
 
 
-#subHeader{
+
+#subHeader {
   font-size: 49px;
   color: rgb(0, 0, 0);
   -webkit-text-stroke: 1px rgb(255, 189, 22);
-    font-family: Iceland;
-
+  font-family: Iceland;
 }
 .split {
   padding: 10px;
   font-size: 18px;
+  font-family: "Kanit", sans-serif;
   background: rgba(204, 192, 192, 0.2);
   /* height: 100%; */
 }
 
-.split ul {
+#toolslist ul {
   list-style: none;
   padding: 0;
 }
-.split ul li {
+#toolslist  ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
-.split ul strong {
+#toolslist ul strong {
   margin-right: 10px;
 }
-.split ul i {
+#toolslist  ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #ffffff;
   line-height: 0;
 }
-.split p:last-child {
+#toolslist p:last-child {
   margin-bottom: 0;
 }
 
@@ -307,14 +271,23 @@ export default {
 
 /* Skils Section */
 
-#skills{
-  padding: 30px;
-  background:  rgb(18, 129, 249);
+.skills {
+  padding: 80px;
+  display: flex;
+  background: rgb(18, 129, 249);
   background: radial-gradient(
     circle,
-    rgb(197, 230, 230)  10%,
+    rgb(197, 230, 230) 10%,
     rgb(0, 191, 255) 77%
-  );;
+  );
+}
+
+#skillsH {
+  font-family: Iceland;
+  font-size: 85px;
+  color: white;
+  -webkit-text-stroke: 2px rgb(1, 0, 18);
+  text-decoration: underline rgb(31, 13, 225) 7px;
 }
 
 .skills .progress {
@@ -347,31 +320,64 @@ export default {
   background-color: #ffffff;
 }
 
-.skills-content p{
-    font-family: Iceland;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-  	-webkit-text-stroke: 1px rgb(255, 189, 22);
-}
-/* .tooltip{
-  cursor: pointer;
-  border-bottom: 2px dotted;
-  position: relative;
-  padding: 7px;
-  font-weight: bold;
-}
-
-
-#tooltiptext{
+.skills-content p {
+  font-family: Iceland;
+  font-size: 25px;
   color: rgb(0, 0, 0);
-  position: absolute;
-  transform: translateX(-50%);
-  white-space: nowrap;
+  -webkit-text-stroke: 1px rgb(255, 189, 22);
 }
 
-#tooltiptext ::before{
-  content: "";
-  position: absolute;
-  transform: translateX(-50%);
-} */
+@media all and (max-width: 987px) {
+  #pfp {
+    height: 150px;
+    width: 150px;
+  }
+
+.abtTitle p {
+  font-family: "Kanit", sans-serif;
+  font-size: 10px;
+  color: white;
+  padding: 0px;
+}
+
+.abtTitle h2 {
+  font-family: Iceland;
+  font-size: 55px;
+
+}
+
+#subHeader {
+  font-size: 39px;
+    padding: 0px;
+
+
+}
+
+#toolslist p{
+  font-size: 10px;
+  padding: 0px;
+
+}
+
+#toolslist ul{
+  font-size: 10px;
+}
+
+
+#skillsH {
+  font-family: Iceland;
+  font-size: 55px;
+}
+
+.section-title{
+    font-size: 10px;
+  padding: 0px;
+}
+
+.skills-content  {
+  font-family: Iceland;
+  font-size: 20px;
+
+}
+}
 </style>

@@ -59,6 +59,13 @@
                 >Contact</router-link
               >
             </li>
+
+            
+            <li class="nav-item dropdown">
+              <router-link to="/footer" class="nav-link active"
+                >Footer</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>
