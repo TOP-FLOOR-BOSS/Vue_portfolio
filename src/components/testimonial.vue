@@ -5,12 +5,12 @@
     <div class="container text-center">
     <div class="row">
       <!-- <div class="col"> -->
-        <div class="card m-3 mx-auto" style="width: 18rem"  v-for="(testimonial, index) in testimonials">
-          <img :src="testimonial.image" class="card-img-top" alt="..." />
+        <div class="card m-3 mx-auto" style="width: 18rem"  v-for="(testimonials, index) in testimonials">
+          <img :src="testimonials.image" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h3>{{testimonial.title}}</h3>
+            <h3>{{testimonials.title}}</h3>
             <p class="card-text">
-              {{testimonial.paragraph}}
+              {{testimonials.paragraph}}
             </p>
           </div>
         </div>
