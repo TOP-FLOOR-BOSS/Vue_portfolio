@@ -46,6 +46,8 @@ export default {
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
 
 #contact{
   padding: 0px;
@@ -67,8 +69,8 @@ export default {
 }
 
 .header2{
-  font-family: Iceland;
-  font-size: 85px;
+  font-family: "Modak", cursive;
+  font-size: 125px;
   color: white;
   -webkit-text-stroke: 2px rgb(1, 0, 18);
   text-decoration: underline rgb(31, 13, 225) 7px;

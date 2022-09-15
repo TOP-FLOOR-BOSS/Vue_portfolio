@@ -1,12 +1,12 @@
 <template>
 
-<section class="testimonialpg">  
+<section class="testimonial testimonialpg">  
     
     <div class="container text-center">
     <div class="row">
       <!-- <div class="col"> -->
-        <div class="card m-3 mx-auto" style="width: 18rem"  v-for="(testimonials, index) in testimonials">
-          <img :src="testimonials.image" class="card-img-top" alt="..." />
+        <div class="card m-3 mx-auto" style="width: 18rem"  v-for="(testimonials, index) in testimonials" :key="index">
+          <img :src="testimonials.image" class="testimg img-fluid" />
           <div class="card-body">
             <h3>{{testimonials.title}}</h3>
             <p class="card-text">
@@ -29,6 +29,7 @@
 
 <script>
 export default {
+  name: 'Testimonial',
   data() {
     return {
       testimonials: [
@@ -48,7 +49,7 @@ export default {
           paragraph:"Liam is very ambitious and has that eye for good design. He is always willing and ready to assist his peers ."
         },
         {
-          image: "https://i.postimg.cc/mDNwV5qK/Area-of-Triangle.png",
+          image: "https://i.postimg.cc/W19zQqvq/Snapchat-1887559217.jpg",
           title: "Joshua Solomons",
           paragraph:"Liam is a hard working guy that always does his work to the best of he's abilities and the work produced is no less then amazing and well worked on, he is a very soft spoken person but no doubt you would be very lucky to work with such an awesome guy."
         },
@@ -77,6 +78,13 @@ export default {
   background-size: 400% 400%;
   min-height: 100vh;
   animation: gradient 15s ease infinite;
+}
+
+.testimg{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 @keyframes gradient {

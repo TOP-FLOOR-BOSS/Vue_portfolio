@@ -17,6 +17,7 @@
           <!-- Modal -->
           <div
             v-for="modal in projects"
+            :key="modal"
             class="modal fade"
             id="staticBackdrop"
             data-bs-backdrop="static"

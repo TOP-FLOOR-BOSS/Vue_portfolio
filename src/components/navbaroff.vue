@@ -20,7 +20,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigate <i class="bi bi-compass"></i></h5>
           <button
             type="button"
             class="btn-close"
@@ -73,4 +73,22 @@ export default {};
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+
+  .offcanvas{
+    font-size: 40px;
+    display: flex;
+    background: url(../assets/Imgs/cloud1.png);
+    background-size: contain;
+    text-decoration-color: azure;
+  }
+
+  .offcanvas-title{
+    font-family: "Modak", cursive;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 3px rgb(0, 255, 238);
+  }
 </style>

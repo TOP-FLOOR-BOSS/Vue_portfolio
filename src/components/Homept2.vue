@@ -50,15 +50,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
-// import About from "./AboutPage.vue";
-// // import second from "../views/AboutPage.vue#2nd"
-// export default {
-//   components: {
-//     About,
-//   },
-// };
 </script>
 
 <style scoped>
@@ -275,8 +267,8 @@ button:focus {
   align-items: center;
   justify-content: center;
   font: 1.5rem sans-serif;
-  cursor: pointer;
   will-change: transform;
+  text-decoration: none;
 }
 
 #abtMebtn::before,
@@ -286,30 +278,30 @@ button:focus {
   left: 0;
   content: "";
   display: block;
-  background-color: deeppink;
+  background-color: rgb(255, 20, 20);
   transition: all 250ms ease-in-out;
 }
 
 #abtMebtn::before {
-  width: 3px;
+  width: 4px;
   height: 100px;
-  box-shadow: 298px 0 deeppink;
+  box-shadow: 298px 0 rgb(255, 20, 20);
 }
 
 #abtMebtn::after {
   height: 2px;
   width: 300px;
-  box-shadow: 0 98px deeppink;
+  box-shadow: 0 98px rgb(255, 20, 20);
 }
 
 #abtMebtn:hover::before {
   left: -10px;
-  box-shadow: 318px 0 deeppink;
+  box-shadow: 318px 0  rgb(255, 239, 20);
 }
 
 #abtMebtn:hover::after {
   top: -10px;
-  box-shadow: 0 118px deeppink;
+  box-shadow: 0 118px rgb(255, 239, 20);
 }
 
 @media all and (max-width: 637px) {

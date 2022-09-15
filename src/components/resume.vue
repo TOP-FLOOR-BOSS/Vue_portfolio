@@ -1,12 +1,12 @@
 <template>
 
-  <section id="resumepg">
-    <div class="container">
+  <section id="resumepg ">
+    <div class="container" >
       <div class="fixed-half">
         <div class="title">
           <div class="resume_left p-5">
-            <div class="resume_profile">
-              <img src="../assets/Imgs/samuel-l-jackson-pink-wig-macmc2sjfp6ck5ig-removebg-preview.png" id="profile_pic" />
+            <div class="resume_profile img-fluid">
+              <img src="../assets/Imgs/undecided-removebg-preview.png" id="profile_pic" />
             </div>
             <div class="resume_content">
               <div class="resume_item resume_info">
@@ -135,246 +135,10 @@
         </div>
       </div>
 
-      <!-- <div class="scrolling-half">
 
-        
-    <div class="wrapper">
-      <h1>Biografia</h1>
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eligendi ea vero, nulla, quasi aliquid quam maiores quas est. Beatae, quis ullam velit cum, consequuntur deserunt corporis fugit. Cupiditate, odit!</div>
-      <ul>
-        <li>Aldo Antonietti</li>
-        <li>Laura Frus</li>
-        <li>Furio Antonietti</li>
-        <li>Federico Antonietti</li>
-        <li>Luca Antonietti</li>
-      </ul>
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut maxime magnam perferendis doloribus a iste recusandae fugit adipisci natus distinctio iusto quod tenetur nulla eos saepe, quaerat, voluptate rerum.</div>
-      <div>Cum est sit architecto odit, sunt expedita accusamus iure illo et culpa reprehenderit natus, aperiam explicabo ea quia a. Ratione laboriosam alias cum, sequi autem harum, enim rerum numquam aliquid!</div>
-      <div>Dolores saepe adipisci magnam obcaecati vero dolorem, iusto ex minima suscipit! Aliquam cumque aperiam veritatis praesentium iusto quae voluptates eaque labore eum quisquam voluptatem, maiores magnam molestiae nostrum facere culpa.</div>
-      <div>Necessitatibus amet praesentium, illo. Explicabo quasi omnis maiores, minima, eius consectetur voluptates beatae voluptatibus tempore culpa architecto, illo perferendis doloremque accusantium quos ad neque excepturi amet facilis blanditiis quas ullam.</div>
-      <div>Quidem fuga aspernatur, explicabo. Sequi quos iste unde vero velit saepe blanditiis quas est! Quo, exercitationem adipisci ipsum ullam ex, ea deleniti totam illum perferendis unde accusantium, amet! Laudantium, cum?</div>
-      <div>Quae soluta sint architecto officia nulla perspiciatis, accusantium sapiente eaque iste dolores numquam sequi rem quia quo quasi magnam voluptatem cumque consequatur facere, at. Necessitatibus at commodi sunt tenetur, fugit!</div>
-      <div>Magni sint incidunt odit laboriosam dignissimos nemo accusantium nostrum molestiae quos quod? Quos, saepe neque pariatur maiores suscipit, ullam reprehenderit incidunt accusamus, necessitatibus et magnam molestias voluptates, eaque officia architecto?</div>
-      <div>Soluta officia ducimus praesentium dolorem quisquam ut nobis voluptate dolore! Quos expedita voluptatibus similique recusandae. Cum esse, molestias, voluptatum rerum et deserunt saepe quod ullam perferendis, architecto, quae eum praesentium.</div>
-      <div>Ipsa pariatur provident, modi praesentium accusantium repellat, dolor quas officia corrupti velit. Dolor reiciendis, et itaque laboriosam blanditiis neque magni commodi saepe aut aliquid ipsum impedit asperiores beatae aperiam? Esse?</div>
-      <div>Sed accusantium deleniti eligendi dolores sapiente est debitis quas aliquam fugiat quam vitae esse veniam eaque, inventore? Qui laboriosam voluptas temporibus nostrum quam veritatis. Suscipit, dolor eaque blanditiis provident nostrum.</div>
-    </div>
-  </div> -->
     </div>
 
-    <!-- <div class="resume">
-   <div class="resume_left">
-     <div class="resume_profile">
-       <img src="../assets/Imgs/AnimeWall.jpg" alt="profile_pic">
-     </div>
-     <div class="resume_content">
-       <div class="resume_item resume_info">
-         <div class="title">
-           <p class="bold">Liam Engel</p>
-           <p class="regular">Designer</p>
-         </div>
-         <ul>
-           <li>
-             <div class="icon">
-               <i class="fas fa-map-signs"></i>
-             </div>
-             <div class="data">
-               21 Street, Texas <br /> USA
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fas fa-mobile-alt"></i>
-             </div>
-             <div class="data">
-               +324 4445678
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fas fa-envelope"></i>
-             </div>
-             <div class="data">
-               stephen@gmail.com
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-weebly"></i>
-             </div>
-             <div class="data">
-               www.stephen.com
-             </div>
-           </li>
-         </ul>
-       </div>
-       <div class="resume_item resume_skills">
-         <div class="title">
-           <p class="bold">skill's</p>
-         </div>
-         <ul>
-           <li>
-             <div class="skill_name">
-               HTML
-             </div>
-             <div class="skill_progress">
-               <span style="width: 80%;"></span>
-             </div>
-             <div class="skill_per">80%</div>
-           </li>
-           <li>
-             <div class="skill_name">
-               CSS
-             </div>
-             <div class="skill_progress">
-               <span style="width: 70%;"></span>
-             </div>
-             <div class="skill_per">70%</div>
-           </li>
-           <li>
-             <div class="skill_name">
-               SASS
-             </div>
-             <div class="skill_progress">
-               <span style="width: 90%;"></span>
-             </div>
-             <div class="skill_per">90%</div>
-           </li>
-           <li>
-             <div class="skill_name">
-               JS
-             </div>
-             <div class="skill_progress">
-               <span style="width: 60%;"></span>
-             </div>
-             <div class="skill_per">60%</div>
-           </li>
-           <li>
-             <div class="skill_name">
-               JQUERY
-             </div>
-             <div class="skill_progress">
-               <span style="width: 88%;"></span>
-             </div>
-             <div class="skill_per">88%</div>
-           </li>
-         </ul>
-       </div>
-       <div class="resume_item resume_social">
-         <div class="title">
-           <p class="bold">Social</p>
-         </div>
-         <ul>
-           <li>
-             <div class="icon">
-               <i class="fab fa-facebook-square"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Facebook</p>
-               <p>Stephen@facebook</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-twitter-square"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Twitter</p>
-               <p>Stephen@twitter</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-youtube"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Youtube</p>
-               <p>Stephen@youtube</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-linkedin"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Linkedin</p>
-               <p>Stephen@linkedin</p>
-             </div>
-           </li>
-         </ul>
-       </div>
-     </div>
-  </div>
-  <div class="resume_right">
-    <div class="resume_item resume_about">
-        <div class="title">
-           <p class="bold">About us</p>
-         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?</p>
-    </div>
-    <div class="resume_item resume_work">
-        <div class="title">
-           <p class="bold">Work Experience</p>
-         </div>
-        <ul>
-            <li>
-                <div class="date">2013 - 2015</div> 
-                <div class="info">
-                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">2015 - 2017</div>
-              <div class="info">
-                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">2017 - Present</div>
-              <div class="info">
-                     <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="resume_item resume_education">
-      <div class="title">
-           <p class="bold">Education</p>
-         </div>
-      <ul>
-            <li>
-                <div class="date">2010 - 2013</div> 
-                <div class="info">
-                     <p class="semi-bold">Web Designing (Texas University)</p> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-                </div>
-            </li>
-            <li>
-              <div class="date">2000 - 2010</div>
-              <div class="info">
-                     <p class="semi-bold">Texas International School</p> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="resume_item resume_hobby">
-      <div class="title">
-           <p class="bold">Hobby</p>
-         </div>
-       <ul>
-         <li><i class="fas fa-book"></i></li>
-         <li><i class="fas fa-gamepad"></i></li>
-         <li><i class="fas fa-music"></i></li>
-         <li><i class="fab fa-pagelines"></i></li>
-      </ul>
-    </div>
-  </div>
-</div>
- -->
+
   </section>
 </template>
 
@@ -382,7 +146,10 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+html {
+  background-color: #fff !important; 
+}
 
 #socialIcon{
   width: 35px;
