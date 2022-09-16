@@ -1,6 +1,7 @@
 <template>
 
 <section class="testimonial testimonialpg">  
+  <h1>Testimonials</h1>
     
     <div class="container text-center">
     <div class="row">
@@ -71,6 +72,8 @@ export default {
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
 
 .testimonialpg{
   padding: 80px;
@@ -78,6 +81,15 @@ export default {
   background-size: 400% 400%;
   min-height: 100vh;
   animation: gradient 15s ease infinite;
+}
+
+h1{
+  font-family: "Modak", cursive;
+  font-size: 85px;
+  color: rgb(0, 238, 255);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  text-decoration: underline rgb(21, 0, 255) 7px;
+
 }
 
 .testimg{
